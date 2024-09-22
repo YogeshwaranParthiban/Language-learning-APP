@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Language Learning App</h1>
+        <nav>
+            <ul>
+                <li><a href="#lessons">Lessons</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#forum">Community Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="lessons">
+            <h2>Interactive Lessons</h2>
+            <div id="lesson-content">
+                <p>Select a lesson to begin!</p>
+            </div>
+            <button onclick="loadLesson()">Start Lesson</button>
+        </section>
+
+        <section id="quizzes">
+            <h2>Quizzes</h2>
+            <button onclick="startQuiz()">Take a Quiz</button>
+            <div id="quiz-content"></div>
+        </section>
+
+        <section id="achievements">
+            <h2>Your Achievements</h2>
+            <div id="achievement-list"></div>
+        </section>
+
+        <section id="forum">
+            <h2>Community Forum</h2>
+            <textarea id="forum-post" placeholder="Share your thoughts..."></textarea>
+            <button onclick="postMessage()">Post</button>
+            <div id="forum-messages"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Language Learning App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
